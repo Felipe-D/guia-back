@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "guiadb"
+  },
+  "AccessToken": {
+    "dataSource": "guiadb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "guiadb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "guiadb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "guiadb",
+    "public": false
+  },
+  "history": {
+    "dataSource": "guiadb",
+    "public": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "guiadb": {
+    "host": "mongodb",
+    "port": 27017,
+    "url": "mongodb+srv://Nura:hrIIblpKWwRGU1Do@mochila-fiuew.mongodb.net/test?retryWrites=true&w=majority",
+    "database": "history",
+    "password": "hrIIblpKWwRGU1Do",
+    "name": "guiadb",
+    "user": "Nura",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

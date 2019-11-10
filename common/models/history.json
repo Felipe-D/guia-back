@@ -1,0 +1,36 @@
+{
+  "name": "history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "placement": {
+      "type": "string",
+      "required": true
+    },
+    "accessDate": {
+      "type": "date",
+      "required": true
+    },
+    "placeId": {
+      "type": "string",
+      "required": true
+    },
+    "customNote": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
